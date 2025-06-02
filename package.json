@@ -29,7 +29,6 @@
   },
   "main": "./dist/react-modal-plugin.umd.cjs",
   "module": "./dist/react-modal-plugin.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/react-modal-plugin.js",
@@ -37,7 +36,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src/lib/modalPlugin/modalPlugin.css"
   ],
   "description": "A modal window plugin for React.",
   "repository": {
