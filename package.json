@@ -1,6 +1,5 @@
 {
   "name": "react-modal-plugin",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -9,10 +8,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  },
+
   "devDependencies": {
     "@babel/cli": "^7.27.2",
     "@babel/core": "^7.27.4",
@@ -28,22 +24,44 @@
     "globals": "^16.0.0",
     "vite": "^6.3.5"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "eslint.config.js",
+
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+
+  "main": "./dist/react-modal-plugin.umd.cjs",
+  "module": "./dist/react-modal-plugin.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-modal-plugin.js",
+      "require": "./dist/react-modal-plugin.umd.cjs"
+    }
+  },
+
+  "files": [
+    "dist"
+  ],
+
+  "description": "A modal window plugin for React",
+  
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/JoshUrdnb/react-modal-plugin.git"
   },
+
   "keywords": [
-    "[\"react\"",
-    "\"modal\"",
-    "\"confirmation\"",
-    "\"plugin\"]"
+    "react",
+    "modal",
+    "confirmation",
+    "plugin"
   ],
+
   "author": "Joshua Urdanabia",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JoshUrdnb/react-modal-plugin/issues"
   },
+
   "homepage": "https://github.com/JoshUrdnb/react-modal-plugin#readme"
 }
