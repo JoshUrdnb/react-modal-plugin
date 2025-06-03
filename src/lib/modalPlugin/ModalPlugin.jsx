@@ -1,5 +1,4 @@
 import "./modalPlugin.css"
-import '../../../dist/react-modal-plugin.css'
 
 export default function ModalPlugin({ isOpen, onClose, children }) {
     if (!isOpen) return null

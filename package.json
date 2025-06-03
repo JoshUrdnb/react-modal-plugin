@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp src/lib/modalPlugin/modalPlugin.css dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -36,8 +36,7 @@
     }
   },
   "files": [
-    "dist",
-    "src/lib/modalPlugin/modalPlugin.css"
+    "dist"
   ],
   "description": "A modal window plugin for React.",
   "repository": {
