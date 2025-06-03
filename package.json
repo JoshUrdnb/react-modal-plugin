@@ -33,7 +33,8 @@
     ".": {
       "import": "./dist/react-modal-plugin.js",
       "require": "./dist/react-modal-plugin.umd.cjs"
-    }
+    },
+    "./dist/modalPlugin.css": "./dist/modalPlugin.css"
   },
   "files": [
     "dist"
